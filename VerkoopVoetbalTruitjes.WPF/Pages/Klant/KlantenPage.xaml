@@ -1,0 +1,37 @@
+﻿<Page x:Class="VerkoopVoetbalTruitjes.WPF.Pages.Klant.KlantenPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VerkoopVoetbalTruitjes.WPF.Pages.Klant"
+      mc:Ignorable="d" 
+      FontFamily="Microsoft Sans Serif"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="KlantenPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="249*"/>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="400*"/>
+        </Grid.ColumnDefinitions>
+        <Frame Grid.ColumnSpan="3" Name="MainView" NavigationUIVisibility="Hidden" Background="PowderBlue"/>
+
+         <Label Content="Klanten Window"/>
+        <Button Name="CreateCustomerBtn" Click="CreateCustomerBtn_Click" MaxWidth="120" MaxHeight="50" Grid.ColumnSpan="2" BorderBrush="BlueViolet">
+            
+            <StackPanel Orientation="Vertical" Height="40">
+
+                <TextBlock FontFamily="Segoe Fluent Icons" Text="&#xec25;" FontSize="20" HorizontalAlignment="Center" Foreground="#FFB91717" />
+                <TextBlock Text="Klant Toevoegen" FontSize="10" Margin="0,4,0,0" HorizontalAlignment="Center" FontWeight="Normal"/>
+            </StackPanel>
+        </Button>
+
+        <Button Name="FindCustomerBtn" Click="FindCustomerBtn_Click" Grid.Column="2" MaxWidth="120" MaxHeight="50" BorderBrush="BlueViolet">
+            <StackPanel Orientation="Vertical">
+                <TextBlock FontFamily="Segoe Fluent Icons" Text="&#xe7c5;" FontSize="20" HorizontalAlignment="Center" Foreground="#FF4600FF"/>
+                <TextBlock Text="Klanten Lijst" FontSize="10" Margin="0,5,0,0" HorizontalAlignment="Center" FontWeight="Normal"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Page>

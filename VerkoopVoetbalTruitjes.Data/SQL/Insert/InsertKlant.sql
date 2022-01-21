@@ -1,0 +1,11 @@
+﻿INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Maes Ali', 'alistraat 9, 9000 Gent');
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Tom ', 'hogentstraat 2m, 9000 Gent');
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('James Bond', 'wachtbeke 24, 3500 Hasselt');
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Tom Cruise', 'newyork 5, 6000 Newyork' );
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Kevin de bryne', 'brussel 5, 2000 Brussel');
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Lukaku', 'leuven 5, 7000 Leuven');
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Jenny Jasper', 'jasperstraat2, 9800 Deinze');
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Google', 'googlestraat 2, 4500 Newyork');
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Insta', 'instraat 5, 2000 Mexico');
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Twitter', 'halloweenstraat 5, 9200 Lovendegem');
+INSERT INTO [dbo].[Klant] (Naam, Adres) VALUES ('Covid', 'chinastraat 5, 009 China');

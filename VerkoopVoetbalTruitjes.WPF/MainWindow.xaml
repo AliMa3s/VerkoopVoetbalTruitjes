@@ -1,0 +1,33 @@
+﻿<Window x:Class="VerkoopVoetbalTruitjes.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VerkoopVoetbalTruitjes.WPF"
+        mc:Ignorable="d"
+        FontFamily="Microsoft Sans Serif"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+            <Button Name="DashboardBtn" Content="Home" Click="DashboardBtn_Click"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1">
+            <Button Name="KlantenBtn" Content="Klanten" Click="KlantenBtn_Click"/>
+            <Button Name="BestellingenBtn" Content="Bestellingen" Click="BestellingenBtn_Click"/>
+            <Button Name="VoetbaltruitjeBtn" Content="Voetbaltruitjes" Click="VoetbaltruitjeBtn_Click"/>
+        </StackPanel>
+        <Frame Name="MainView" Grid.Row="1" Grid.ColumnSpan="2" NavigationUIVisibility="Hidden" Loaded="MainView_Loaded" x:FieldModifier="public" Background="PowderBlue"/>
+        
+    </Grid>
+</Window>

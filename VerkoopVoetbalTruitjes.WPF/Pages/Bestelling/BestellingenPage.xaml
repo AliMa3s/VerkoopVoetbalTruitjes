@@ -1,0 +1,34 @@
+﻿<Page x:Class="VerkoopVoetbalTruitjes.WPF.Pages.Bestelling.BestellingenPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VerkoopVoetbalTruitjes.WPF.Pages.Bestelling"
+      mc:Ignorable="d" 
+      FontFamily="Microsoft Sans Serif"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BestellingenPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="129*"/>
+            <ColumnDefinition Width="293*"/>
+            <ColumnDefinition Width="378*"/>
+        </Grid.ColumnDefinitions>
+        <Frame Grid.ColumnSpan="3" Name="MainView" NavigationUIVisibility="Hidden" Background="PowderBlue"/>
+        <Label Content="Bestellingen Window"/>
+        <Button Name="CreateOrderBtn" Click="CreateOrderBtn_Click" MaxWidth="120" MaxHeight="50" Grid.ColumnSpan="2" BorderBrush="BlueViolet">
+            <StackPanel Orientation="Vertical">
+                <TextBlock FontFamily="Segoe Fluent Icons" Text="&#xe7bf;" FontSize="20" HorizontalAlignment="Center" Foreground="#FF118F11"/>
+                <TextBlock Text="Bestelling Toevoegen" FontSize="10" Margin="0,5,0,0" HorizontalAlignment="Center" FontWeight="Normal"/>
+            </StackPanel>
+        </Button>
+
+        <Button Name="FindOrderBtn" Click="FindOrderBtn_Click" Grid.Column="2" MaxWidth="120" MaxHeight="50" BorderBrush="BlueViolet">
+            <StackPanel Orientation="Vertical">
+                <TextBlock FontFamily="Segoe Fluent Icons" Text="&#xe7c5;" FontSize="20" HorizontalAlignment="Center" Foreground="#FF4600FF"/>
+                <TextBlock Text="Bestellingen Lijst" FontSize="10" Margin="0,5,0,0" HorizontalAlignment="Center" FontWeight="Normal"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Page>
